@@ -50,8 +50,8 @@ public class DiceRoll {
 		rollButton.addActionListener((e) -> {
 
 			// 1. Make randomChoice equal to a random number between 1 and 6
-			int randomChoice = 0;
-			int r = rand.nextInt(6);
+			Random rand=new Random(); 
+			int randomChoice = rand.nextInt(6);
 			// 2. Fix the code below so that it displays the correct image
 			if (randomChoice == 0) {
 				label.setIcon(oneImg);
