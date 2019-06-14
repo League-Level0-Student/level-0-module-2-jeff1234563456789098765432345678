@@ -11,17 +11,23 @@ import javax.sound.sampled.Clip;
 import javax.swing.JApplet;
 import javax.swing.JOptionPane;
 
-public class SafeCracker {
+public class SafeCracker { 
+	
 
-	public static void main(String[] args) {
+
+
+	public static void main(String[] args) { 
+		 for (int i = 0; i < 9999999; i++) {
+			 tryCode(i);
+			
+		}
 		/*
 		 * Your mission: use the tryCode method to crack the safe by trying all possible
-		 * combinations
+		 * combinations 
 		 */
 		
 
 	}
-
 	static void tryCode(int guess) {
 		System.out.println("trying " + guess);
 
